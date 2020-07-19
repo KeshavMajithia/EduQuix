@@ -21,11 +21,11 @@
   margin: auto;
   display:block;
 }
-.container {
+#containerz {
   position: relative;
   overflow: hidden;
   width: 100%;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  padding-top: 56.25%;
 }
 
 .responsive-iframe {
@@ -34,7 +34,7 @@
   left: 0;
   bottom: 0;
   right: 0;
-  width: 100%;
+  width: 50%;
   height: 100%;
 }
 </style>
@@ -59,11 +59,11 @@
         <section class="clean-block features">
             <div class="container">
                 <div class="block-heading">
-                    <h2 class="text-info">Zooom Meetings</h2>
+                    <h2 class="text-info">Zoom Meetings</h2>
                     <p id ='text'>This is a convenient place to meet with your teachers/students, seamlessly!</p>
                 </div>
                 <div class="row justify-content-center"></div>
-                <div class="container">
+                <div id="containerz">
                 <div class="responsive-iframe">
                     <iframe allow="microphone; camera" style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%;" src="https://zoom.us/wc/join/825227050" frameborder="0"></iframe>
                 </div>
