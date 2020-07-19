@@ -21,6 +21,22 @@
   margin: auto;
   display:block;
 }
+.container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
 </style>
 </head>
 
@@ -47,8 +63,10 @@
                     <p id ='text'>This is a convenient place to meet with your teachers/students, seamlessly!</p>
                 </div>
                 <div class="row justify-content-center"></div>
-                <div class="iframe-container" style="overflow: hidden; padding-top: 56.25%; position: relative;">
+                <div class="container">
+                <div class="responsive-iframe" style="overflow: hidden; padding-top: 56.25%; position: relative;">
                     <iframe allow="microphone; camera" style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%;" src="https://zoom.us/wc/join/825227050" frameborder="0"></iframe>
+                </div>
                 </div>
                 <br><br>
                 <iframe width='800' height='400' id="sudoku" src='https://www.wolframcloud.com/obj/smort.callie/Published/Sudoku.nb' frameborder='0'></iframe>
